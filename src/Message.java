@@ -29,7 +29,7 @@ public class Message {
 	 *@return Boolean vector representing the message  */
 
 	public Vector<Boolean> makeMessage(String msg, Dictionary dict){
-		String[] arrayOfWords = msg.split(" ");
+		String[] arrayOfWords = msg.toLowerCase().split(" +|,|'|!|$|>|<|>|\" |:|\\.|\\?|-|\\(|\\)");
 		//for (int i = 0; i<arrayOfWords.length; i++)
 	//		System.out.println(arrayOfWords[i]);
 		ArrayList<String> temp = dict.getDictionary();
@@ -37,9 +37,10 @@ public class Message {
 		for (int i = 0; i<arrayOfWords.length; i++){
 			if (temp.contains(arrayOfWords[i]))
 				_message.add(i, true);
-			else
+			else{
 				_message.add(i, false);
-		}
+			}
+				}
 		return _message;
 	}
 

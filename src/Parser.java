@@ -10,12 +10,11 @@ import java.util.HashMap;
 public class Parser {
 
 	private HashMap<String, ArrayList<String>> _message;
-
-
+	
 	public Parser(){
 		_message = new HashMap<String,ArrayList<String>>();
-
 	}
+	
 	/** Creates an hashMap of all messages related to the forum they are taken from
 	 * Each entry has an indicator(the id of the forum) and an arrayList of all the messages from the forum
 	 * @param an absolute path to the file */
@@ -27,7 +26,7 @@ public class Parser {
 			//Read from file to the buffer
 			buffer = new BufferedReader(new FileReader(path));
 		} catch (FileNotFoundException e1) {
-			System.out.println("problem opening file");
+			System.out.println("problem opening file" + e1);
 		}
 		try {
 			// While we have more information to read

@@ -9,6 +9,7 @@ public class BagOfWords {
 	public BagOfWords(){
 		_wordSet = new ArrayList<String>();
 	}
+	
 	public BagOfWords(ArrayList<String> list){
 		_wordSet = list;
 	}
@@ -32,7 +33,8 @@ public class BagOfWords {
 	 * Only words with meaning count, and no duplicates are allowed (like a set)
 	 * @param a String representing the sentence */
 	public void createBagFromMessage (String message){
-		String[] temp = message.toLowerCase().split(" +|,|'");
+	//	System.out.println("The full message : " + message);
+		String[] temp = message.toLowerCase().split(" +|,|'|!|$|>|<|>|\" |:|\\.|\\?|-|\\(|\\)");
 		for (int i = 0; i < temp.length; i++) {
 			// Match to see if it is a "real" word
 			//	System.out.println(temp[i]);
