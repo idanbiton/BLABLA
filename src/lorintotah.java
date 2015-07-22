@@ -1,5 +1,5 @@
 
 public class lorintotah {
-idan ma kore
+ani ovedet po
 
 }
