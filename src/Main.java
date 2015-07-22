@@ -14,7 +14,7 @@ public class Main{
 		ArrayList<String> sentences = new ArrayList<String>();
 		for (int i = 1; i < 5; i++){
 		file = "/Users/Lorin/Downloads/projectdata/20newsgroups/"+i+".train";
-		//parser.parse(file,i);
+		parser.parse(file,i);
 		}
 		HashMap<Integer, ArrayList<String>> messages = parser.getMessages();
 		Dictionary dict = new Dictionary();
