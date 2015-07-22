@@ -13,7 +13,7 @@ public class Main{
 		String file;
 		ArrayList<String> sentences = new ArrayList<String>();
 		for (int i = 1; i < 5; i++){
-		file = "C://"+i+".train2";
+		file = "/Users/Lorin/Downloads/projectdata/20newsgroups/"+i+".train";
 		parser.parse(file,i);
 		}
 		HashMap<Integer, ArrayList<String>> messages = parser.getMessages();
@@ -36,6 +36,7 @@ public class Main{
 				messages.get(i).get(j).toLowerCase();
 			}
 		}
+		
 		Matrix m = new Matrix();
 		int pointer = 0;// Index of the current array list in m
 		for (int i: messages.keySet()){

@@ -9,17 +9,9 @@ public class Matrix {
  	
 	
 	public Matrix(){
-		_workingSet = new ArrayList<LinkedHashSet<Integer>>();
+		_workingSet = new ArrayList<LinkedHashSet<Integer>>(4);
 	}
 	
-	public int searchForword(int i){
-		int count = 0;
-		for (int j = 0; j < _workingSet.size(); j++){
-			if (_workingSet.get(j).contains(i))
-				count++;
-		}
-		return count;
-	}
 	
 	public ArrayList<LinkedHashSet<Integer>> getMatrix(){
 		return _workingSet;
