@@ -1,6 +1,6 @@
 
 import java.util.ArrayList;
-//bitton
+
 
 public class BagOfWords {
 	private ArrayList<String> _wordSet;
