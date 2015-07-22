@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/jsoup-1.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Weka-3-6/weka-src.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Desktop/weka-dev-3.7.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/ujmp-complete-0.2.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

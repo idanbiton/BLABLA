@@ -9,18 +9,19 @@ public class Dictionary {
 	public Dictionary(){
 
 		_dictionary = new ArrayList<String>();
-
 	}
+	
 	public ArrayList<String> getDictionary(){
 
 		return _dictionary;
-
 	}
+	
 	public void print(){
 		for (int i=0 ; i< _dictionary.size(); i++){
 			System.out.println(_dictionary.get(i).toString());
 		}
 	}
+	
 	/** Updating existing dictionary from current word-set(bag of words)
 	 * No duplicates are allowed
 	 * @param Bag of words object, bow.

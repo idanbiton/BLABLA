@@ -9,10 +9,10 @@ import java.util.HashMap;
 
 public class Parser {
 
-	private HashMap<String, ArrayList<String>> _message;
+	private HashMap<Integer, ArrayList<String>> _message;
 	
 	public Parser(){
-		_message = new HashMap<String,ArrayList<String>>();
+		_message = new HashMap<Integer,ArrayList<String>>();
 	}
 	
 	/** Creates an hashMap of all messages related to the forum they are taken from
@@ -34,14 +34,14 @@ public class Parser {
 				// Add the current message to the list
 				lst.add(current);
 				// Add the list to the current value of the key
-				_message.put(String.valueOf(key), lst);
+				_message.put(key, lst);
 			}
 		} catch (IOException e) {
 			System.out.println("problem reading from file");
 		}
 	}
 	
-	public HashMap< String, ArrayList<String>> getMessage(){
+	public HashMap< Integer, ArrayList<String>> getMessages(){
 		return _message;
 	}
 }
