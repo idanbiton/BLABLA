@@ -1,17 +1,18 @@
+import java.util.LinkedHashSet;
+
 
 public class Pair {
 
-	public int _index;
-	public String _word;
+	public int _label;
+	public LinkedHashSet<Integer> _indexes;
 
 	public Pair(){
-		_index = -1;
-		_word = null;
+		_label = 0;
+		_indexes = new LinkedHashSet<>();
 
 	}
-	public Pair(String str, int n){
-		_index = n;
-		_word = str;
-
+	public Pair(LinkedHashSet<Integer> set, int n){
+		_label = n;
+		_indexes = set;
 	}
 }
