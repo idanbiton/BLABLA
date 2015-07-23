@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.LinkedHashSet;
 
 
-@SuppressWarnings("unused")
 public class Main{
 
 	public static void main(String[] args){
@@ -14,7 +13,7 @@ public class Main{
 		String file;
 		ArrayList<String> sentences = new ArrayList<String>();
 		for (int i = 1; i < 5; i++){
-		file = args[3]+i+".train";
+		file = "/Users/Lorin/Downloads/projectdata/20newsgroups/"+i+".train";
 		parser.parse(file,i);
 		}
 		HashMap<Integer, ArrayList<String>> messages = parser.getMessages();
