@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.LinkedHashSet;
 
 
+@SuppressWarnings("unused")
 public class Main{
 
 	public static void main(String[] args){
